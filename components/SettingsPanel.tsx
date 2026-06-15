@@ -167,15 +167,15 @@ export default function SettingsPanel({ config, onSave, onClose }: Props) {
 
           {/* Notion DB 欄位說明 */}
           <section className="mb-6 p-3 rounded-xl bg-[#E8EDE7] text-[11px] text-[#6B5F58]">
-            <div className="font-semibold mb-1.5">📋 Notion DB 建議欄位名稱</div>
+            <div className="font-semibold mb-1.5">📋 Notion DB 欄位名稱</div>
             <div className="grid grid-cols-2 gap-x-4 gap-y-1 font-mono text-[10px]">
-              {[['標題','Title（必填）'],['內容','多行文字'],['日期','Date'],['類型','Select'],
-                ['標籤','Multi-select'],['連結','URL'],['平台','Text'],['地點','Text']].map(([k,v]) => (
+              {[['標題','Title（必填）'],['內容','多行文字'],['日期','Date'],
+                ['連結','URL'],['地點','Text']].map(([k,v]) => (
                 <div key={k}><span className="text-[#3D3530] font-semibold">{k}</span>：{v}</div>
               ))}
             </div>
             <div className="mt-2 text-[9px] text-[#9B8F88]">
-              「類型」值可為：照片、影片、文字、網頁、地點、社群
+              Last edited time 由 Notion 自動記錄，不需手動建立
             </div>
           </section>
 
